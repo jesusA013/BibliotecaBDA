@@ -14,7 +14,7 @@ CREATE TABLE Perfil (
     id_perfil INT PRIMARY KEY AUTO_INCREMENT,
     usuario VARCHAR(50) UNIQUE NOT NULL,
     contraseña VARCHAR(50) NOT NULL,
-    id_estudiante INT UNIQUE,
+    id_estudiante INT,
     FOREIGN KEY (id_estudiante) REFERENCES Estudiante(id_estudiante) 
 );
 
